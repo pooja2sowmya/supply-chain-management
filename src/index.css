@@ -1,0 +1,55 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --agri-green-50: #edf7ed;
+  --agri-green-100: #d1e9d1;
+  --agri-green-200: #b3dbb3;
+  --agri-green-300: #8ecc8e;
+  --agri-green-400: #72be72;
+  --agri-green-500: #56b156;
+  --agri-green-600: #4ea24e;
+  --agri-green-700: #438943;
+  --agri-green-800: #3a713a;
+  --agri-green-900: #2e5e2e;
+
+  --agri-brown-50: #f5f0e9;
+  --agri-brown-100: #e5d9c3;
+  --agri-brown-200: #d3b99b;
+  --agri-brown-300: #c19a72;
+  --agri-brown-400: #b38253;
+  --agri-brown-500: #a56a33;
+  --agri-brown-600: #95622e;
+  --agri-brown-700: #805127;
+  --agri-brown-800: #6b4420;
+  --agri-brown-900: #563717;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800 bg-gray-50;
+  }
+}
+
+@layer components {
+  .dashboard-container {
+    @apply flex h-screen overflow-hidden;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
